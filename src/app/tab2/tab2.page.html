@@ -1,17 +1,79 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Restaurantes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list [inset]="true">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item href="https://www.instagram.com/charcorestaurante/" target="_blank">
+      <ion-thumbnail slot="start">
+        <img src="https://classic.exame.com/wp-content/uploads/2022/05/RANKING-13.jpg">
+      </ion-thumbnail>
+      <ion-label>
+       <ion-text color="primary">
+        <h2>Charco</h2>
+       </ion-text>
+       <h6>Chef Tuca Mezzomo</h6>
+       <div>
+        <ion-icon name="calendar" color="secondary"></ion-icon>
+        <ion-text color="tertiary">{{ getDummyDate() | date }}</ion-text>
+       </div>
+      </ion-label>
+      <ion-chip color="success" slot="end">Aberto</ion-chip>
+    </ion-item>
+
+    <ion-item href="https://manimanioca.com.br/" target="_blank">
+      <ion-thumbnail slot="start">
+        <img src="https://classic.exame.com/wp-content/uploads/2022/05/RANKING-5.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+         <h2>Maní</h2>
+        </ion-text>
+        <h6>Chef Helena Rizzo</h6>
+        <div>
+          <ion-icon name="calendar" color="secondary"></ion-icon>
+          <ion-text color="tertiary">{{ getDummyDate() | date }}</ion-text>
+         </div>
+       </ion-label>
+       <ion-chip color="success" slot="end">Aberto</ion-chip>
+    </ion-item >
+
+    <ion-item href="http://www.domrestaurante.com.br/" target="_blank">
+      <ion-thumbnail slot="start">
+        <img src="https://classic.exame.com/wp-content/uploads/2022/05/RANKING-9.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+         <h2>D.O.M.</h2>
+        </ion-text>
+        <h6>Chef Alex Tala</h6>
+        <div>
+          <ion-icon name="calendar" color="secondary"></ion-icon>
+          <ion-text color="tertiary">{{ getDummyDate() | date }}</ion-text>
+         </div>
+       </ion-label>
+        <ion-chip color="danger" slot="end" [disabled]="true">Fechado</ion-chip>
+    </ion-item>
+
+    <ion-item href="https://www.fasano.com.br/gastronomia/fasano" target="_blank">
+      <ion-thumbnail slot="start">
+        <img src="https://classic.exame.com/wp-content/uploads/2021/11/MARCAS-1.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+         <h2>Fasano</h2>
+        </ion-text>
+        <h6>Chef Luca Gozzani</h6>
+        <div>
+          <ion-icon name="calendar" color="secondary"></ion-icon>
+          <ion-text color="tertiary">{{ getDummyDate() | date }}</ion-text>
+         </div>
+       </ion-label>
+       <ion-chip color="danger" slot="end" [disabled]="true">Fechado</ion-chip>
+    </ion-item>
+
+  </ion-list>
 </ion-content>

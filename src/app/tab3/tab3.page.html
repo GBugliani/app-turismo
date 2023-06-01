@@ -1,17 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title>Hoteis</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item [routerLink]="['/intercontinental']">
+      <ion-thumbnail slot="start">
+        <img src="https://wp-cdn.etiquetaunica.com.br/blog/wp-content/uploads/2016/03/10105829/foto_no_exif-10.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="tertiary">
+          <h2>InterContinental</h2>
+        </ion-text>
+        <ion-badge color="danger" slot="end">Jardim Paulista</ion-badge>
+      </ion-label>
+      <ion-icon name="chevron-foward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-card>
+    <img src="https://wp-cdn.etiquetaunica.com.br/blog/wp-content/uploads/2016/03/10105829/foto_no_exif-10.jpg"/>
+    <ion-card-header>
+      <ion-card-title>InterContinental</ion-card-title>
+      <ion-card-subtitle>Alameda Santos, 1123 - Jardim Paulista, São Paulo - SP, 01419-001</ion-card-subtitle>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-card-content>
+      Dentro do hotel, o restaurante Tarsila oferece a mais alta gastronomia. Serviços de academia 24h, aluguel de carros, concierge e piscina ao ar livre.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://wp-cdn.etiquetaunica.com.br/blog/wp-content/uploads/2016/03/10105832/foto_no_exif-11.jpg"/>
+    <ion-card-header>
+      <ion-card-title>Emiliano</ion-card-title>
+      <ion-card-subtitle>R. Oscar Freire, 384 - Jardim Paulista, São Paulo - SP, 01426-000</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      O hotel oferece cortesias inimagináveis com mordomos que disponibilizam drinks de welcome no check in, engraxe de sapatos além dos serviços do concierge disponíveis.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://wp-cdn.etiquetaunica.com.br/blog/wp-content/uploads/2016/03/10105835/foto_no_exif-12.jpg"/>
+    <ion-card-header>
+      <ion-card-title>Grand Hyatt</ion-card-title>
+      <ion-card-subtitle>Av. das Nações Unidas, 13.301 - Itaim Bibi, São Paulo - SP, 04578-000</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      No 20º andar, o Grand Club Lounge oferece um espaço de descontração com drinks e serviços de mordomia. O Amanary Spa,
+      especializado para trazer tranquilidade e relaxamento aos hóspedes, prepara massagens, espaço para exercícios, piscina externa e outra interna.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://wp-cdn.etiquetaunica.com.br/blog/wp-content/uploads/2016/03/10105840/foto_no_exif-14.jpg"/>
+    <ion-card-header>
+      <ion-card-title>Unique</ion-card-title>
+      <ion-card-subtitle>Av. Brigadeiro Luís Antônio, 4700 - Jardim Paulista, São Paulo - SP, 01402-002</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Arquitetura de Ruy Otake, design de João Amentano e paisagismo de Gilberto Eikis, o hotel Unique é o mais luxuoso escolhido
+      pelos hóspedes. O hotel localizado na Avenida Brigadeiro Luís Antônio, número 4700, possui estilo requintado e vistas deslumbrantes.
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>

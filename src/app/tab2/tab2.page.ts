@@ -9,4 +9,8 @@ export class Tab2Page {
 
   constructor() {}
 
+  getDummyDate() {
+    return new Date();
+  }
+
 }
